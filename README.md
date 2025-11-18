@@ -41,9 +41,9 @@ Holds username + role
 
 Implements **Least Privilege**
 <ul>
-  <li>student VIEW ONLY</li>
-  <li>teacher VIEW + EDIT</li>
-  <li>admin FULL ACCESS</li>
+  <li>student → VIEW ONLY</li>
+  <li>teacher → VIEW + EDIT</li>
+  <li>admin → FULL ACCESS</li>
 </ul>
 
 ✔ **SecurityLayer class**
@@ -52,7 +52,7 @@ Implements **Defense in Depth**
 
 <ul>
   <li>Password check</li>
-  <li>FA check</li>
+  <li>2FA check</li>
   <li>Intrusion detection (blocks suspicious actions)</li>
 </ul>
 
