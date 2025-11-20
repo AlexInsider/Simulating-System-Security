@@ -18,6 +18,8 @@ public class SecurityLayer {
     public int authTryCount = 0;
     
     public void generateAuthCode(){
+        authCode = "";
+        
         Random rng = new Random();
         for(int i = 0; i <= 4; i++){
             authCode += rng.nextInt(10);
@@ -60,3 +62,4 @@ public class SecurityLayer {
         return status;
     }
 }
+
