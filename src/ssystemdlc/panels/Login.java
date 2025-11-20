@@ -134,6 +134,8 @@ public class Login extends javax.swing.JFrame {
                             }
                             
                             auth = JOptionPane.showInputDialog(this, "Enter Code", "Authorization Reuired [ Retry Left: " +(4 - securityLayer.authTryCount) +" ]", JOptionPane.INFORMATION_MESSAGE);
+                            if(auth == null) return;
+                            
                             securityLayer.authTryCount++;
                         } while (!auth.equals(securityLayer.getAuthCode()));
                         
