@@ -39,9 +39,9 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`ID`, `Username`, `Password`, `Role`) VALUES
-(1, 'sir', 'sir123', 'teacher'),
-(2, 'doy', 'doy123', 'student'),
-(3, 'high', 'high123', 'admin');
+(1, 'teacher', 'teacher123', 'Teacher'),
+(2, 'student', 'student123', 'Student'),
+(3, 'admin', 'admin123', 'Admin');
 
 --
 -- Indexes for dumped tables

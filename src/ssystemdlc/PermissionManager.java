@@ -14,15 +14,15 @@ public class PermissionManager {
         if(intrusionDetected) System.exit(0);
         
         switch(role){
-            case "student":
+            case "Student":
                 home = new Home("VIEW ONLY");
                 home.setVisible(true);
                 break;
-            case "teacher":
+            case "Teacher":
                 home = new Home("VIEW + EDIT");
                 home.setVisible(true);
                 break;
-            case "admin":
+            case "Admin":
                 home = new Home("FULL ACCESS");
                 home.setVisible(true);
                 break;

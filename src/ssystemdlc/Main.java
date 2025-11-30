@@ -1,5 +1,7 @@
 package ssystemdlc;
 
+import ssystemdlc.panels.CustomComponent;
+import ssystemdlc.panels.Home;
 import ssystemdlc.panels.Login;
 
 public class Main {

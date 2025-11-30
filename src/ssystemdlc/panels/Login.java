@@ -126,16 +126,16 @@ public class Login extends javax.swing.JFrame {
                     if(pwd.getText().equals(securityLayer.getPassword())){
                         securityLayer.generateAuthCode();
                         String auth;
-                        
+                                                
                         do {
-                            if(securityLayer.authTryCount == 5){
+                            if(securityLayer.authTryCount == 4){
                                 JOptionPane.showMessageDialog(this, "Too Many Retries, Aborting!", "Retry Count Reached", JOptionPane.ERROR_MESSAGE);
                                 System.exit(0);
                             }
                             
                             auth = JOptionPane.showInputDialog(this, "Enter Code", "Authorization Reuired [ Retry Left: " +(4 - securityLayer.authTryCount) +" ]", JOptionPane.INFORMATION_MESSAGE);
                             if(auth == null) return;
-                            
+
                             securityLayer.authTryCount++;
                         } while (!auth.equals(securityLayer.getAuthCode()));
                         
